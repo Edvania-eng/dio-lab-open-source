@@ -1,0 +1,18 @@
+def estrategia_para_cenario(cenario):
+    if "manter aplicativos no ambiente de origem" in cenario or "adiar sua migracao para a nuvem" in cenario:
+        return "retain"
+        
+    elif "mover aplicativos para a nuvem sem modifica-los" in cenario or "lift and shift" in cenario:
+        return "rehost"
+        
+    elif "transferir servidores ou instancias para outra plataforma na nuvem" in cenario:
+        return "relocate"
+        
+    elif "substituir o aplicativo por uma versao ou produto diferente" in cenario:
+        return "repurchase"
+        
+    elif "mover o aplicativo para a nuvem" in cenario or "introduzir otimizacoes para opera-lo de forma eficiente" in cenario:
+        return "replatform"
+        
+    elif "modificar a arquitetura do aplicativo" in cenario or "aproveitar os recursos nativos para melhorar agilidade" in cenario:
+        return "refactor or re-architect"
